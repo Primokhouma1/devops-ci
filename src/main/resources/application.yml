@@ -1,0 +1,20 @@
+server:
+  port: 9090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8083/eureka}
+
+spring:
+  application:
+    name: gateway-service
+  # redis:
+    # host: ${REDIS_HOST:localhost}
+    # port: ${REDIS_PORT:6379}
+
+
+  cloud:
+    gateway:
+      routes:
+
